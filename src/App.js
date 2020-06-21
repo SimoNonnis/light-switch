@@ -1,28 +1,17 @@
 import React from 'react';
-import { ReactComponent as MenuIcon } from './Icons/menu.svg';
-import { ReactComponent as InfoIcon } from './Icons/info.svg';
-import { ReactComponent as CheckedIcon } from './Icons/checked.svg';
-import { ReactComponent as CancelIcon } from './Icons/cancel.svg';
+
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
 import './styles.css';
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello Light switch</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      Icons made by{' '}
-      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-        Freepik
-      </a>{' '}
-      from{' '}
-      <a href="https://www.flaticon.com/" title="Flaticon">
-        {' '}
-        www.flaticon.com
-      </a>
-      <MenuIcon />
-      <InfoIcon />
-      <CheckedIcon />
-      <CancelIcon />
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
