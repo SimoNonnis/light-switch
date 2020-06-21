@@ -1,5 +1,8 @@
 import React from 'react';
 import { ReactComponent as MenuIcon } from './Icons/menu.svg';
+import { ReactComponent as InfoIcon } from './Icons/info.svg';
+import { ReactComponent as CheckedIcon } from './Icons/checked.svg';
+import { ReactComponent as CancelIcon } from './Icons/cancel.svg';
 import './styles.css';
 
 export default function App() {
@@ -17,6 +20,9 @@ export default function App() {
         www.flaticon.com
       </a>
       <MenuIcon />
+      <InfoIcon />
+      <CheckedIcon />
+      <CancelIcon />
     </div>
   );
 }
