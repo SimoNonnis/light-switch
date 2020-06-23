@@ -2,6 +2,9 @@
   --blue: #00b6ff;
 }
 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +14,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 10vh auto 10vh;
+  grid-template-rows: 60px auto 60px;
   grid-template-areas:
     'header header header header'
     'main main main main'
@@ -19,8 +22,9 @@ body {
 }
 
 .header {
-  height: 10vh;
   background-color: var(--blue);
+  text-align: right;
+  padding: 10px;
 
   grid-area: header;
 }
@@ -29,9 +33,17 @@ body {
   grid-area: main;
 }
 
-.footer {
-  height: 10vh;
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: white;
+  padding: 10px;
+}
 
+.footer {
   border: 1px solid grey;
   border-bottom: 3px solid var(--blue);
   grid-area: footer;
@@ -41,4 +53,5 @@ body {
   width: 40px;
   height: 40px;
   display: inline-block;
+  cursor: pointer;
 }
