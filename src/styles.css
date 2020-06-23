@@ -1,6 +1,27 @@
+:root {
+  --blue: #00b6ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
+  height: 100vh;
+}
+
+.header {
+  height: 10vh;
+  background-color: var(--blue);
+}
+
+.footer {
+  height: 10vh;
+
+  border: 1px solid grey;
+  border-bottom: 2px solid var(--blue);
 }
 
 .icon {
