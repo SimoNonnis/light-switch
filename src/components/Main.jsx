@@ -5,12 +5,12 @@ import Info from './Info';
 import Selection from './Selection';
 
 const Main = () => (
-  <header>
+  <main className="main">
     Main
     <Gallery />
     <Info />
     <Selection />
-  </header>
+  </main>
 );
 
 export default Main;
