@@ -8,8 +8,14 @@ body {
 }
 .App {
   font-family: sans-serif;
-  text-align: center;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 10vh auto 10vh;
+  grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
 }
 
 .header {
@@ -27,7 +33,7 @@ body {
   height: 10vh;
 
   border: 1px solid grey;
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 3px solid var(--blue);
   grid-area: footer;
 }
 
