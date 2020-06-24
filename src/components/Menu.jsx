@@ -1,20 +1,7 @@
 import React from 'react';
 import { ReactComponent as CancelIcon } from '../Icons/cancel.svg';
 
-const menuItems = [
-  'января',
-  'февраля',
-  'марта',
-  'апреля',
-  'мая',
-  'июня',
-  'июля',
-  'августа',
-  'сентября',
-  'октября',
-  'ноября',
-  'декабря',
-];
+import menuItems from './menuItems';
 
 const Menu = ({ setIsOpen }) => (
   <div className="menu">

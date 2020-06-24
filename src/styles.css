@@ -1,5 +1,6 @@
 :root {
   --blue: #00b6ff;
+  --grey: grey;
 }
 
 * {
@@ -63,9 +64,27 @@ ul {
 }
 
 .footer {
-  border: 1px solid grey;
+  border: 1px solid var(--grey);
   border-bottom: 3px solid var(--blue);
   grid-area: footer;
+}
+
+.footerList {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.footerListItem {
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footerListItem + .footerListItem {
+  border-left: 1px solid var(--grey);
 }
 
 .icon {
