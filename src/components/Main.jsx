@@ -6,10 +6,11 @@ import Selection from './Selection';
 
 const Main = () => (
   <main className="main">
-    Main
     <Gallery />
-    <Info />
-    <Selection />
+    <div>
+      <Info />
+      <Selection />
+    </div>
   </main>
 );
 

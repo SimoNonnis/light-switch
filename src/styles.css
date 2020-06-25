@@ -1,5 +1,6 @@
 :root {
   --blue: #00b6ff;
+  --darkBlue: #00b6ff;
   --grey: grey;
   --lightGrey: #e6e6e6;
 }
@@ -44,10 +45,19 @@ a {
 
 .main {
   grid-area: main;
+  display: flex;
 }
 
 .content {
   padding: 10px;
+}
+
+.infoButton {
+  background-color: var(--blue);
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  align-items: center;
 }
 
 .navPageLink {
@@ -114,4 +124,8 @@ a {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.icon--info {
+  margin-right: 10px;
 }

@@ -5,13 +5,15 @@ import Credits from './Credits';
 import { ReactComponent as InfoIcon } from '../Icons/info.svg';
 
 const Info = () => (
-  <div>
-    Info <Credits />
-    <div>
-      <Link to="/info">
-        <InfoIcon className="icon" />
-      </Link>
+  <div className="content">
+    <div className="content">
+      <Credits />
     </div>
+
+    <Link className="infoButton" to="/info">
+      <InfoIcon className="icon icon--info" />
+      Информация
+    </Link>
   </div>
 );
 
