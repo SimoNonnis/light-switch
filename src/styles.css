@@ -1,6 +1,7 @@
 :root {
   --blue: #00b6ff;
   --grey: grey;
+  --lightGrey: #e6e6e6;
 }
 
 * {
@@ -16,6 +17,11 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+
+a {
+  color: inherit;
+}
+
 .App {
   font-family: sans-serif;
   height: 100vh;
@@ -38,6 +44,16 @@ ul {
 
 .main {
   grid-area: main;
+}
+
+.content {
+  padding: 10px;
+}
+
+.navPageLink {
+  display: block;
+  padding: 10px;
+  background-color: var(--lightGrey);
 }
 
 .menu {

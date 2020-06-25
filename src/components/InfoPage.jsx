@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 
 const InfoPage = () => (
   <div className="main">
-    <Link to="/">Home</Link>
-    <div>
+    <Link className="navPageLink" to="/">
+      Home
+    </Link>
+    <div className="content">
+      <h1>армия народа</h1>
       <p>
         стоим мы на посту повзводно и поротно бессмертны как огонь спокойны как
         гранит мы - армия страны мы - армия народа великий подвиг наш история
