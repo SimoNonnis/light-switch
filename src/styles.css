@@ -48,6 +48,18 @@ a {
   display: flex;
 }
 
+.main--home {
+  flex-wrap: wrap;
+}
+
+.gallery {
+  padding: 10px;
+}
+
+.main__cell {
+  flex: 1;
+}
+
 .content {
   padding: 10px;
 }
