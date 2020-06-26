@@ -89,6 +89,7 @@ a {
   bottom: 0;
   height: 100vh;
   background-color: white;
+  z-index: 12;
 }
 
 .menuList {
