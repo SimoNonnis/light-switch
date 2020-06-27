@@ -1,9 +1,15 @@
 import React from 'react';
 import { ReactComponent as CheckedIcon } from '../Icons/checked.svg';
 
-const Selection = () => (
+const Selection = ({ selectionList, selectionId, setSelectionId }) => (
   <div className="content">
-    <CheckedIcon className="icon" />
+    <ul>
+      {selectionList.map(s => (
+        <li key={s.id} onClick={() => setSelectionId(s.id)}>
+          {s.name} {s.id === selectionId && <CheckedIcon className="icon" />}
+        </li>
+      ))}
+    </ul>
   </div>
 );
 
